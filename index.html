@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // Array对象内置方法使用
+    // sort 数组排序方法
+    let arr1 = [3,4,1,2]
+    arr1 = arr1.sort((a,b)=>{
+        return b-a
+    })
+    console.log(arr1,'sort');
+
+    //push 在数组尾端添加元素,并返回新的数组长度
+    let arr2 = [1,2]
+    let i2 = arr2.push(3,4)
+    console.log(i2,'return');
+    
+    console.log(arr2,'push');
+
+    //unshift 在数组开头添加元素 ,并返回新的长度
+    let arr3 = [2,3]
+    let i3 = arr3.unshift(1)
+    console.log(i3,'return');
+    
+    console.log(arr3,'unshift');
+    
+    //shift 删除数组第一个元素,并返回这个元素
+    let arr4 = [4,1,2,3]
+    let i4 = arr4.shift()
+    console.log(i4,'return');
+    console.log(arr4,'shift');
+
+    //pop 删除数组最后一个元素,并且返回这个元素
+    let arr5 = [1,2,3,4]
+    let i = arr5.pop()
+    console.log(i,'return');
+    console.log(arr5,'pop');
+
+    //concat 连接数组,并返回新的数组
+    let arr6 = [1,2]
+    let arr7 = [3,4]
+    let i6 = arr6.concat(arr7)
+    console.log(i6,'return');
+    console.log(arr6,'concat');
+
+    //reverse 颠倒数组
+    let arr8 = [1,2,3,4]
+    let i8 = arr8.reverse()
+    console.log(i8,'return');
+    console.log(i8,'reverse');
+
+    //join 在数组中插入一个指定字符。并返回字符串,不会改变原始数组
+    let arr9 = [1,2,3]
+    let i9 = arr9.join('-')
+    console.log(i9,'return');
+    console.log(arr9,'join');
+
+    //toString  将数组转换成字符串，并返回字符串，不会改变原始数组， 如果数组中有对象，那么会转换成 [Object Object]
+    let arr10 = [1,2,3,new Date()]
+    let i10 = arr10.toString()
+    console.log(i10,'return');
+    console.log(arr10,'toString');
+    
+    //toLocaleString
+    let arr11 = [1,2,3,new Date()]
+    let i11 = arr11.toLocaleString()
+    console.log(i11,'return');
+    console.log(arr11,'toLocaleString');
+    
+        
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+</script>
+</html>
