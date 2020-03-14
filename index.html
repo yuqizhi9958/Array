@@ -63,17 +63,19 @@
     console.log(i9,'return');
     console.log(arr9,'join');
 
-    //toString  将数组转换成字符串，并返回字符串，不会改变原始数组， 如果数组中有对象，那么会转换成 [Object Object]
+    //toString  将数组转换成字符串，并返回字符串，不会改变原始数组， 如果数组中有对象，那么会转换成 [Object Object],不推荐
     let arr10 = [1,2,3,new Date()]
     let i10 = arr10.toString()
     console.log(i10,'return');
     console.log(arr10,'toString');
     
-    //toLocaleString
+    //toLocaleString 将数组转换成本地字符串，并返回字符串，不会改变原始数组， 如果数组中有对象，那么会转换成 [Object Object]
     let arr11 = [1,2,3,new Date()]
     let i11 = arr11.toLocaleString()
     console.log(i11,'return');
     console.log(arr11,'toLocaleString');
+
+    
     
         
     
